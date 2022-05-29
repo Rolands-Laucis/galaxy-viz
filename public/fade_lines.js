@@ -5,6 +5,8 @@ function keyPressed() {
     else if (keyCode === DOWN_ARROW) console.log(ffopt)
 }
 
+window.play_viz = () => {console.log('here'); render = !render}
+window.new_viz = () => setup()
 
 //general
 const iters = [150, 1000]

@@ -35,15 +35,15 @@
     on:keydown={on_key_down}
 />
 
-<main>
+<main on:click={() => window.new_viz()} on:dblclick={() => window.play_viz()}>
 	{#if help}
-		<section transition:fade={{duration:130}}>
+		<section transition:fade={{duration:130}} on:click={() => help = !help}>
 			<h1>This is a visualization renderer for the song "Rolands Laucis - Projects (can't do it all)"</h1>
 			<h2>Controls:</h2>
 			<ul>
-				<li><b>H</b> - toggle this help box</li>
-				<li><b>RIGHT ARROW</b> - new random render</li>
-				<li><b>UP ARROW</b> - toggle animation of render (should be butter smooth 60fps)</li>
+				<li><b>H / TAP (mobile)</b> - toggle this help box</li>
+				<li><b>RIGHT ARROW / TAP (mobile)</b> - new random render</li>
+				<li><b>UP ARROW / DOUBLE TAP (mobile)</b> - toggle animation of render (should be butter smooth 60fps)</li>
 				<li><b>DOWN ARROW</b> - print to console the current random config</li>
 				<li><b>F11</b> - to enter fullscreen mode (or whatever it is on your browser)</li>
 			</ul>
@@ -63,6 +63,7 @@
 		position: absolute;
 		bottom: 24px;
 		left: 24px;
+		margin-right: 24px;
 		padding: 24px;
 		max-width: 600px;
 		display: flex;
