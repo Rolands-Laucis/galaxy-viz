@@ -48,7 +48,7 @@
 				<li><b>F11</b> - to enter fullscreen mode (or whatever it is on your browser)</li>
 			</ul>
 			<h3>You are free to use this for whatever you like, so long as you credit me - <a href="https://www.rolandslaucis.lv/" target="_blank">Rolands Laucis</a></h3>
-			<h3><a href="" target="_blank">GITHUB</a></h3>
+			<h3><a href="https://github.com/Rolands-Laucis/galaxy-viz" target="_blank">GITHUB</a></h3>
 		</section>
 	{/if}
 </main>
