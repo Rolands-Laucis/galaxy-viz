@@ -38,13 +38,13 @@
 <main on:click={() => window.new_viz()} on:dblclick={() => window.play_viz()}>
 	{#if help}
 		<section transition:fade={{duration:130}} on:click={() => help = !help}>
-			<h1>This is a visualization renderer for the song "Rolands Laucis - Projects (can't do it all)"</h1>
+			<h1>This is a visualization renderer for the song <a href="https://www.youtube.com/watch?v=chsaN5Pl0D8" target="_blank">"Rolands Laucis - Projects (can't do it all)"</a></h1>
 			<h2>Controls:</h2>
 			<ul>
-				<li><b>H / TAP (mobile)</b> - toggle this help box</li>
-				<li><b>RIGHT ARROW / TAP (mobile)</b> - new random render</li>
-				<li><b>UP ARROW / DOUBLE TAP (mobile)</b> - toggle animation of render (should be butter smooth 60fps)</li>
-				<li><b>DOWN ARROW</b> - print to console the current random config</li>
+				<li><b>H / TAP this card</b> - toggle this help box</li>
+				<li><b>RIGHT ARROW / TAP</b> - new random render</li>
+				<li><b>UP ARROW / DOUBLE TAP</b> - play/pause (should be butter smooth 60fps)</li>
+				<li><b>DOWN ARROW</b> - print to console the current render config</li>
 				<li><b>F11</b> - to enter fullscreen mode (or whatever it is on your browser)</li>
 			</ul>
 			<h3>You are free to use this for whatever you like, so long as you credit me - <a href="https://www.rolandslaucis.lv/" target="_blank">Rolands Laucis</a></h3>
